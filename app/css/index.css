@@ -1,0 +1,15 @@
+body {
+  background-color: #2f2f2f;
+  color: beige;
+  font-size: 24pt;
+  font-family: 'Comic Sans', 'Chalkboard', sans-serif;
+}
+
+div {
+  width: fit-content;
+  padding: 10px;
+}
+
+#motionPath {
+  display: none;
+}

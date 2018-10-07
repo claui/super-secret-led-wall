@@ -1,9 +1,12 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "animejs": "^2.2.0"
+  },
   "devDependencies": {
     "node-sass": "^4.9.3",
     "parcel-bundler": "^1.9.7",
-    "sass": "^1.14.1"
+    "sass": "^1.14.1",
+    "trash-cli": "^1.4.0"
   },
   "name": "super-secret-led-wall",
   "version": "0.0.1",
@@ -13,6 +16,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "serve": "yarn parcel serve html/index.html --no-autoinstall --open"
+    "build": "yarn trash dist && yarn parcel build html/index.html",
+    "serve": "yarn parcel serve app/index.html --open"
   }
 }

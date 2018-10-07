@@ -1,6 +1,9 @@
 {
+  "dependencies": {},
   "devDependencies": {
-    "parcel-bundler": "^1.9.7"
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.9.7",
+    "sass": "^1.14.1"
   },
   "name": "super-secret-led-wall",
   "version": "0.0.1",

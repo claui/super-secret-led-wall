@@ -20,4 +20,4 @@ A browser window will open on `http://localhost:1234/`.
 
 ## Acknowledgements
 
-- [Blurry Wavy Text Animation](https://codemyui.com/blurry-wavy-text-animation/) by [Yusuke Nakaya](https://twitter.com/s14garnet) ([license](https://codepen.io/YusukeNakaya/pen/EbMWgd/license))
+- [Anime](http://animejs.com/) by [Julian Garnier](https://github.com/juliangarnier) ([license](https://github.com/juliangarnier/anime/blob/69131dc2a9fee58de6a9a986015a78341a15deca/LICENSE.md))

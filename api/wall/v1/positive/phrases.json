@@ -4,4 +4,34 @@
     "text": "i am phrase",
     "expires": 3000
   },
+  {
+    "id": 2,
+    "text": "🐒",
+    "expires": 3000
+  },
+  {
+    "id": 3,
+    "text": "everyone dies lol",
+    "expires": 3000
+  },
+  {
+    "id": 4,
+    "text": "dritter welt krieg brecht aus",
+    "expires": 3000
+  },
+  {
+    "id": 5,
+    "text": "was soll ich den schreiben ka ???",
+    "expires": 3000
+  },
+  {
+    "id": 6,
+    "text": "haha sieht man des jetzt??",
+    "expires": 3000
+  },
+  {
+    "id": 7,
+    "text": "scheiße pasirt",
+    "expires": 3000
+  },
 ]

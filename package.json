@@ -16,7 +16,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "build": "yarn trash dist && yarn parcel build html/index.html",
-    "serve": "yarn parcel serve app/index.html --open"
+    "build": "yarn trash dist && yarn parcel build app/*.html",
+    "serve": "yarn parcel serve app/*.html"
   }
 }

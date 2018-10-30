@@ -1,6 +1,48 @@
 body {
-  background-color: #2f2f2f;
-  color: beige;
+  background-color: #000000;
+  color: white;
   font-size: 36pt;
-  font-family: 'Comic Sans', 'Chalkboard', sans-serif;
+  font-family: 'Avenir-light', 'Futura', sans-serif;
+  height: 100%;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.bar {
+  background: #FFFFFF;
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+}
+
+.happy .bar {
+  mix-blend-mode: hard-light;
+}
+
+.sad .bar {
+  mix-blend-mode: difference;
+}
+
+.bar1 {
+  float: left;
+}
+
+.bar2 {
+  float: right;
+}
+
+.bar3 {
+  float: left;
+}
+
+.bar4 {
+  float: right;
+}
+
+.bar5 {
+  float: left;
+}
+
+.bar6 {
+  float: right;
 }

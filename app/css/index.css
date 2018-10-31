@@ -1,8 +1,9 @@
 body {
   background-color: #000000;
   color: white;
-  font-size: 36pt;
-  font-family: 'Avenir-light', 'Futura', sans-serif;
+  font-size: 28pt;
+  font-family: 'Futura Std', 'Futura', sans-serif;
+  letter-spacing: 5px;
   height: 100%;
   margin: 0;
   text-transform: uppercase;

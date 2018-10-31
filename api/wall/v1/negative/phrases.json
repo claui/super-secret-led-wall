@@ -1,37 +1,37 @@
 [
   {
     "id": 1,
-    "text": "vibrant communities",
+    "text": "destroyed nature",
     "expires": 3000
   },
   {
     "id": 2,
-    "text": "food efficiency",
+    "text": "living underground",
     "expires": 3000
   },
   {
     "id": 3,
-    "text": "space tours",
+    "text": "control of machines",
     "expires": 3000
   },
   {
     "id": 4,
-    "text": "diversity",
+    "text": "poverty",
     "expires": 3000
   },
   {
     "id": 5,
-    "text": "new professions",
+    "text": "reduced brain-function",
     "expires": 3000
   },
   {
     "id": 6,
-    "text": "personalised medicines",
+    "text": "war",
     "expires": 3000
   },
   {
     "id": 7,
-    "text": "ambulance drones",
+    "text": "omnipotent technology",
     "expires": 3000
   }
 ]

@@ -10,7 +10,12 @@ body {
   text-transform: uppercase;
 }
 
-
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transform: translateY(0px);
+}
 
 .bar {
   width: 16.66vw;

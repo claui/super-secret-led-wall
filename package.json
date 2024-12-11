@@ -5,7 +5,7 @@
   "devDependencies": {
     "parcel": "^2.13.2",
     "sass": "^1.14.1",
-    "trash-cli": "^1.4.0"
+    "trash-cli": "^6.0.0"
   },
   "name": "super-secret-led-wall",
   "version": "0.0.1",

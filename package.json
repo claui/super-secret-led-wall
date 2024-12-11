@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "animejs": "^2.2.0"
+    "animejs": "^3.2.2"
   },
   "devDependencies": {
     "parcel": "^2.13.2",

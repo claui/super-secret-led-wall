@@ -41,15 +41,26 @@ Follow these steps to check out the development version:
 
 10. Direct your browser to `http://localhost:1234/negative.html` or `http://localhost:1234/positive.html`.
 
-## Browser URLs
+## Setting up a self-hosted Debian server
 
-- https://ted-merck-wall.appspot.com/wall/negative/
+```bash
+mkdir /usr/share/led-wall-client-wall/www/html/
+chgrp led-wall /usr/share/led-wall-client-wall/www/html/
+chmod 775 /usr/share/led-wall-client-wall/www/html/
+a2enmod alias
+a2enmod proxy
+a2enmod proxy_http
+touch /etc/apache2/sites-available/led-wall-webclient-wall.conf
+a2ensite led-wall-webclient-wall.conf
+systemctl restart apache2.service
+```
 
-- https://ted-merck-wall.appspot.com/wall/positive/
+## Deploying to a self-hosted Debian server
 
-- https://ted-merck-wall.appspot.com/kiosk/negative/
-
-- https://ted-merck-wall.appspot.com/kiosk/positive/
+```bash
+rsync -ciprt --rsync-path="sudo rsync" contrib/apache2/sites-available/ led-wall:/etc/apache2/sites-available/
+yarn build && rsync -aci --delete dist/ led-wall:/usr/share/led-wall-webclient-wall/www/html/
+```
 
 ## Acknowledgements
 

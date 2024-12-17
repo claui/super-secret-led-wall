@@ -44,9 +44,9 @@ Follow these steps to check out the development version:
 ## Setting up a self-hosted Debian server
 
 ```bash
-mkdir /usr/share/led-wall-client-wall/www/html/
-chgrp led-wall /usr/share/led-wall-client-wall/www/html/
-chmod 775 /usr/share/led-wall-client-wall/www/html/
+mkdir -p /usr/share/led-wall-webclient-wall/www/html
+chgrp led-wall /usr/share/led-wall-webclient-wall/www/html
+chmod 775 /usr/share/led-wall-webclient-wall/www/html
 a2enmod alias
 a2enmod proxy
 a2enmod proxy_http

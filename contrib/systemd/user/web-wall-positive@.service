@@ -1,0 +1,20 @@
+[Unit]
+Description=Open positive TED@Merck LED wall in browser
+After=graphical-session.target network-online.target
+CollectMode=inactive-or-failed
+StartLimitBurst=10
+StartLimitIntervalSec=2min
+BindsTo=graphical-session.target
+Wants=network-online.target
+
+[Service]
+Type=exec
+# Triggering the browser to recover from a botched initial page load
+# is hard, so we probe the API instead
+ExecStartPre=/usr/bin/curl -sS --fail-with-body -o /dev/null %i/api/wall/v1/positive/phrases
+ExecStart=/usr/bin/chromium --kiosk --app=http://%i/wall/positive
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=default.target

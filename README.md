@@ -62,6 +62,19 @@ rsync -ciprt --rsync-path="sudo rsync" contrib/apache2/sites-available/ led-wall
 yarn build && rsync -aci --delete dist/ led-wall:/usr/share/led-wall-webclient-wall/www/html/
 ```
 
+## Setting up Debian-based web clients
+
+```bash
+ssh HOST mkdir -p .config/systemd/user
+scp contrib/systemd/user/* HOST:.config/systemd/user/
+ssh HOST systemctl --user daemon-reload
+ssh HOST systemctl --user enable --now \
+  web-wall-positive@led-wall.local.service
+# or:
+ssh HOST systemctl --user enable --now \
+  web-wall-negative@led-wall.local.service
+```
+
 ## Acknowledgements
 
 - [Anime](http://animejs.com/) by [Julian Garnier](https://github.com/juliangarnier) ([license](https://github.com/juliangarnier/anime/blob/69131dc2a9fee58de6a9a986015a78341a15deca/LICENSE.md))
